@@ -19,7 +19,7 @@ python src/synthetic/generate_synthetic_dataset.py --seed 0
 ```
 
 This writes `data/synthetic/dataset_v2.csv` and
-`data/synthetic/predictions_stockees.csv`, then prints the four structural
+`data/synthetic/predictions_stored.csv`, then prints the four structural
 diagnostics. They should read:
 
 ```

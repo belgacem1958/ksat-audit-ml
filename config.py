@@ -17,7 +17,7 @@ RESULTS_DIR = ROOT / "results"
 FIGURES_DIR = RESULTS_DIR / "figures"
 
 DATASET_V2 = SYNTHETIC_DIR / "dataset_v2.csv"
-PREDICTIONS_STOCKEES = SYNTHETIC_DIR / "predictions_stockees.csv"
+PREDICTIONS_STORED = SYNTHETIC_DIR / "predictions_stored.csv"
 UNSODA_VALIDATION = PUBLIC_DIR / "unsoda_validation.csv"
 NCHRP_VALIDATION = PUBLIC_DIR / "nchrp_validation.csv"
 

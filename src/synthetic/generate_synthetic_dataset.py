@@ -39,7 +39,7 @@ Usage:
 
 Outputs:
     data/synthetic/dataset_v2.csv            main analysis table
-    data/synthetic/predictions_stockees.csv  stored-prediction columns
+    data/synthetic/predictions_stored.csv  stored-prediction columns
 """
 import argparse
 from pathlib import Path
@@ -215,7 +215,7 @@ def main():
     df.to_csv(out, index=False)
 
     # ------------------------------------------------------------------
-    # 5. Stored-prediction columns (schema of predictions_stockees.csv).
+    # 5. Stored-prediction columns (schema of predictions_stored.csv).
     #    These mimic the "stored predictions" audit target: a leak-prone
     #    column (Rawls_1983_ksat) is a near-perfect copy of the target.
     # ------------------------------------------------------------------
@@ -226,7 +226,7 @@ def main():
         "Rawls_1983_ksat": ksat_ms * (1.0 + rng.normal(0.0, 0.02, size=n)),
         "Zamarin_ksat": 10 ** (log10_ksat + rng.normal(0.0, 0.6, size=n)),
     })
-    stock.to_csv(out.parent / "predictions_stockees.csv", index=False)
+    stock.to_csv(out.parent / "predictions_stored.csv", index=False)
 
     # ------------------------------------------------------------------
     # 6. Report the structural diagnostics (should echo the paper).

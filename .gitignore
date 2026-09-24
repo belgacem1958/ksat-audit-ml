@@ -31,7 +31,7 @@ venv/
 results/
 **/results/
 data/synthetic/dataset_v2.csv
-data/synthetic/predictions_stockees.csv
+data/synthetic/predictions_stored.csv
 
 # === OS / éditeurs ===
 .DS_Store
