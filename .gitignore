@@ -1,12 +1,12 @@
-# === Secrets / données commerciales — ne jamais pousser ===
+# === Secrets / commercial data — never push ===
 .env
 .env.*
 *.pem
 *.key
 *.p12
 !data/synthetic/dataset_v2.csv
-# (les tables SVSoils commerciales réelles restent en dehors de ce dépôt :
-#  seul le jeu synthétique `dataset_v2.csv` + le design corrélation sont poussés)
+# (the real commercial SVSoils tables stay outside this repository:
+#  only the synthetic dataset `dataset_v2.csv` + the correlation design are pushed)
 
 # === Artefacts Python ===
 __pycache__/
