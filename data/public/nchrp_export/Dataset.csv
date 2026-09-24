@@ -1,0 +1,54 @@
+Dataset_ID,Dataset_Name,Dataset_Lead,Import_Date,Dataset_Description,Dataset_Notes
+"AZ923","NCHRP 9-23",,"10/28/01 00:00:00",,
+"CS2000","Consulting project soils information","Murray Fredlund","11/12/97 00:00:00","This project contains soils contributed by the consulting industry.",
+"DM3056","Demo dataset","John Smith","01/24/00 00:00:00","Dataset of generated information","The data created in this dataset is present to display some of the features of the SoilVision software and does not represent multiple tests on a single soil sample."
+"DS1000","Consulting Dataset",,,"This dataset contains soils gathered from consulting projects for various companies.",
+"DT550","Demo dataset","John Smith","01/24/00 00:00:00","Dataset of generated information","The data created in this dataset is present to display some of the features of the SoilVision software and does not represent multiple tests on a single soil sample."
+"LI2000","Compacted Clay Liners","C.H. Benson","11/12/97 00:00:00","Data obtained from the paper ""Estimating Hydrauic Conductivity of Compacted Clay Liners."" by C.H. Benson, Huaming Zhai, and Xiaodong Wang in the Journal of Geotechnical Engineering, 120:366-387","Dataset contains no soil functions but many measurements of ksat for each soil type. Soil measurements of ksat were averaged and the average value is presented as ksat in the database."
+"PB2001","Patrick Black","Patrick Black","11/12/97 00:00:00","This file contains unfrozen water content data as measured by Al Tice using his nmr technique.  The data is in the following format:
+line 1:
+   Soil, Test type
+line 2:
+   Wet density [g/cc], dry density [g/cc], gravimetric water content [g water/g soil],
+   volumetric water content [cc water/cc total]
+line 3 till next soil:
+   temperature [-C], gravimetric unfrozen water content [g unfrozen water/g soil]","Volume-mass properties were underdefined. A specific gravity of 2.65 was assumed for all soils to complete volume-mass information.
+Zero experimental values of Temperature and water content were removed during import"
+"PM6762","Tailings Storage, Lower OK Tedi","Len Murray","11/12/97 00:00:00","Conceptual design of tailings storage","Grainsize curves were used to predict soil-water characteristic curves. The SWCC's were then used to do preliminary modelling and conceptual design of a tailings pond cover."
+"RS2000","Soils obtained from research papers","Murray Fredlund","11/12/97 00:00:00","This project contains soils input from data provided by various research papers.","References to the source research paper can often be found in the main soil form. Project SS1996 also contains a fair amount of soils data extracted from research papers."
+"SP1015","Walter Rawls Dataset","Walter Rawls","11/12/97 00:00:00","This project contains soils donated by Walter Rawls.","Data with SWCC as well as saturated conductivities for roughly one-fourth of the data."
+"SP1016","CECIL","R.R. Bruce and R.D. Williams","11/12/97 00:00:00","Physical Characteristics of Soils in the Southern Region: Cecil","Physical Characteristics of Soils in the Southern Region
+Cecil
+R. R. Bruce, J. H. Dane,
+V. L. Quisenberry, N. L. Powell,
+and A. W. Thomas
+
+
+Introduction
+
+As levels of soil management are intensified to achieve greater crop production, while preserving the soil resource, a more complete characterization of the soil physical system is required.  Characteristics associated with describing soil water and solute transport as well as soil water retention are particularly important if water supplied by irrigation and rainfall is to be used effectively.  Soil water potential and hydraulic conductivity as functions of water content are critical to such characterization.
+The data reported in this bulletin were obtained from plots in Alabama, Georgia, South Carolina, and Virginia on sites classified as Cecil.  The Cecil series is classified as being in the clayey, kaolinitic, thermic family of Typic Hapludults.  The field and laboratory procedures and measurements that were used are not identical from location to location, but they do have several important measurements in common where procedures were similar.  Therefore, the data can be used to assess the variability of these
+
+physical characteristics within the soil series.  In some instances, there are sufficient measurements to assess within pedons the variability of selected physical quantities.  The data also provide an opportunity to compare in situ measurements with laboratory measurements on undisturbed core samples or other samples.  Although this report does not attempt to proceed very far with an analysis of the data, it provides a unique reservoir of data for a variety of uses.
+These data were the result of studies conducted in the years 1977 to 198 1, inclusive, and contributed to regional project S-124, entitled ""Movement and retention of water and solutes in selected southern region field soils."" The S-124 Technical Committee was composed, for the most part, of trained and experienced soil physicists associated with universities, state agricultural experiment stations, and federal agencies in the southern region."
+"SP1020","UNSODA","Feike Leij","11/12/97 00:00:00","This data set consists of the soils contained in the UNSODA database.","Soil contributed by Feike Leij"
+"SP1022","Mining Tailings","Ward Wilson","11/12/97 00:00:00","The soils represented in this project are samples of mining tailings.","The chemical make-up of these soils is slightly different than that of regular soils."
+"SP1023","Waste Rock","Ward Wilson","11/12/97 00:00:00","This project contains samples of waste rock from various mine sites.","Some soils in this group are complete samples while from other samples, the large particle sizes have been removed."
+"SS1996","Scott Sillers Dataset","Scott Sillers","11/12/97 00:00:00","This project contains soils gathered by Scott Sillers during the process of his Master's degree.","The soils were gathered from an extensive review of research papers related to unsaturated soil mechanics."
+"TR1980","Soil Water Properties of Subgrade Soils","Donald J. Janssen and Barry J. Dempsey","11/19/97 00:00:00","A report of the investigation of Soil Water Properties of Subgrade Soils
+Project IHR-606
+Illinois Cooperative Highway and Transportation Research Program","Conducted by the 
+Transportation Research Laboratory 
+Department of Civil Engineering
+Engineering Experiment Station
+University of Illinois
+at Urbana-Champaign
+April 1980
+
+In cooperation with the 
+State of Illinois
+Department of Transportation
+and the
+U.S. Department of Transportation
+Federal Highway Administration"
+"US2000","Soils from University of Saskatchewan","Alex Kozlow","11/12/97 00:00:00","This group of soils contain data measured during various research projects at the University of Saskatchewan.","Experimental methods used are precise and data is considered extremely reliable."

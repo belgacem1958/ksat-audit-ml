@@ -1,0 +1,40 @@
+# === Secrets / données commerciales — ne jamais pousser ===
+.env
+.env.*
+*.pem
+*.key
+*.p12
+!data/synthetic/dataset_v2.csv
+# (les tables SVSoils commerciales réelles restent en dehors de ce dépôt :
+#  seul le jeu synthétique `dataset_v2.csv` + le design corrélation sont poussés)
+
+# === Artefacts Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+*.so
+
+# === Historique / sauvegardes improvisées ===
+*.bak
+*.bak[0-9]*
+*~
+.*.swp
+*.orig
+*.rej
+
+# === Sorties d'analyse (régénérables par les scripts) ===
+results/
+**/results/
+data/synthetic/dataset_v2.csv
+data/synthetic/predictions_stockees.csv
+
+# === OS / éditeurs ===
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
