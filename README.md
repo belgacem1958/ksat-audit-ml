@@ -1,11 +1,11 @@
 # ksat audit — multi-source machine learning for saturated hydraulic conductivity
 
-Reproducible companion of the paper *"Audit of machine-learning models for
-saturated hydraulic conductivity: the source effect"* (Computers &
-Geosciences). This repository reproduces every figure and table of the paper
-end-to-end: the analysis pipeline, the validation protocols, the external
-validation on public databases, and the synthetic dataset that stands in for
-the commercial SVSoils-derived analysis table.
+Reproducible companion of the paper *"Variance decomposition and honest
+validation of saturated hydraulic conductivity on a multi-source database"*
+(Computers & Geosciences). This repository reproduces every figure and table
+of the paper end-to-end: the analysis pipeline, the validation protocols, the
+external validation on public databases, and the synthetic dataset that
+stands in for the commercial SVSoils-derived analysis table.
 
 ## What is reproduced
 
@@ -62,6 +62,13 @@ src/
     rosetta_benchmark.py         comparison with ROSETTA3
     transfer_matrix.py           cross-base transfer matrix
     external_validation.py       UNSODA/NCHRP validation, inverse transfer
+    grouping_granularity.py      source-effect sensitivity to the grouping
+    per_source.py                per-source statistics and offsets
+    learning_curves.py           RMSE vs training size (naive/grouped)
+    source_leak.py               source-identity leak test
+    bias_variance.py             bias-variance decomposition of the collapse
+    conformal_calibration.py     conformal calibration sweep (60-95 %)
+    partial_dependence.py        partial dependence of the material signal
 docs/
   user_guide.md                  how the pipeline works
   tutorials/quickstart.md        step-by-step reproduction
@@ -87,10 +94,35 @@ python -m src.analysis.tuning
 python -m src.analysis.rosetta_benchmark
 python -m src.analysis.transfer_matrix
 python -m src.analysis.external_validation
+python -m src.analysis.grouping_granularity
+python -m src.analysis.per_source
+python -m src.analysis.learning_curves
+python -m src.analysis.source_leak
+python -m src.analysis.bias_variance
+python -m src.analysis.conformal_calibration
+python -m src.analysis.partial_dependence
 
 # 3. Smoke tests
 python -m pytest tests/ -q
 ```
+
+## Running on the real database
+
+The seven analysis scripts added for the paper's new sections
+(`grouping_granularity`, `per_source`, `learning_curves`, `source_leak`,
+`bias_variance`, `conformal_calibration`, `partial_dependence`) accept
+`--data <path>` to run on the real commercial analysis table instead of the
+synthetic dataset:
+
+```bash
+python -m src.analysis.per_source --data /path/to/dataset_v2.csv
+python -m src.analysis.learning_curves --data /path/to/dataset_v2.csv
+python -m src.analysis.conformal_calibration --data /path/to/dataset_v2.csv
+```
+
+The real table is not redistributed (commercial); the synthetic dataset
+reproduces the *ordering* of every protocol, which is what the paper's
+conclusions rely on.
 
 ## Data
 
